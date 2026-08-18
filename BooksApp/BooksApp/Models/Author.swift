@@ -16,7 +16,8 @@ struct Author: Identifiable {
     let category: String
 }
 
-let sampleAuthors: [Author] = [
+extension Author {
+    static let samples: [Author] = [
     Author(name: "John Freeman", description: "American writer he was the editor of the", imageName: "freeman", category: "Poets"),
     Author(name: "Adam Dalva", description: "He is the senior fiction editor of guernica ma", imageName: "dalva", category: "Novelists"),
     Author(name: "Abraham Verghese", description: "He is the professor and Linda R. Meier and", imageName: "verghese", category: "Novelists"),
@@ -31,4 +32,5 @@ let sampleAuthors: [Author] = [
     Author(name: "Lin-Manuel Miranda", description: "American playwright, composer and actor", imageName: "miranda", category: "Playwrights"),
     Author(name: "Louise Glück", description: "American poet, Nobel Prize in Literature laureate", imageName: "gluck", category: "Poets"),
     Author(name: "Jesmyn Ward", description: "American novelist, two-time National Book Award winner", imageName: "ward", category: "Novelists")
-]
+    ]
+}

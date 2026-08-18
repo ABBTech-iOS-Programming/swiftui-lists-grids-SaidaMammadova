@@ -15,9 +15,10 @@ struct Book: Identifiable {
     let imageName: String
 }
 
-let sampleBooks: [Book] = [
+extension Book {
+    static let samples: [Book] = [
     Book(title: "The Kite Runner", author: "Khaled Hosseini", price: 14.99, imageName: "kite_runner"),
-    Book(title: "The Subtle Art", author: "Mark Manson", price: 20.99, imageName: "subtle_art"),
+    Book(title: "The Subtle Art", author: "Mark Manson", price: 20.99, imageName: "subtleArt"),
     Book(title: "The Art of War", author: "Sun Tzu", price: 14.99, imageName: "art_of_war"),
     Book(title: "Atomic Habits", author: "James Clear", price: 16.99, imageName: "atomic_habits"),
     Book(title: "Deep Work", author: "Cal Newport", price: 18.99, imageName: "deep_work"),
@@ -26,4 +27,5 @@ let sampleBooks: [Book] = [
     Book(title: "Sapiens", author: "Yuval Noah Harari", price: 22.00, imageName: "sapiens"),
     Book(title: "To Kill a Mockingbird", author: "Harper Lee", price: 11.99, imageName: "mockingbird"),
     Book(title: "The Great Gatsby", author: "F. Scott Fitzgerald", price: 10.99, imageName: "gatsby")
-]
+    ]
+}
