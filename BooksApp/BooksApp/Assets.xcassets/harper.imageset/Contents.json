@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "harper.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
